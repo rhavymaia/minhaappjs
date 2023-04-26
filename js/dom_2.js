@@ -3,4 +3,16 @@
 // document.geteElementsByClassName();
 // document.getElementById();
 // document.getElementsByName()
-let primeiroP = document.querySelectorAll('.amarelo');
+
+
+let button = document.getElementById('adicionar');
+
+const handleClick = (event) => {
+  let elementos = document.querySelectorAll('.amarelo');
+  for (let elemento of elementos){
+    elemento.classList.add("borda");
+  }
+}
+button.onclick = handleClick;
+button.addEventListener('onclick', handleClick);
+
