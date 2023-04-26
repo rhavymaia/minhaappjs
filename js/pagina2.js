@@ -1,0 +1,1 @@
+console.log("Essa é a página 2.");
